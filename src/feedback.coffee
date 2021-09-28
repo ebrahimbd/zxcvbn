@@ -3,10 +3,12 @@ scoring = require('./scoring')
 feedback =
   default_feedback:
     warning: ''
-    suggestions: [
-      "Use a few words, avoid common phrases"
-      "No need for symbols, digits, or uppercase letters"
-    ]
+     suggestions: [
+    "Your password can’t be too similar to your other personal information."
+    "Your password must contain at least 8 characters."
+    "Your password can’t be a commonly used password."
+    "Your password can’t be entirely numeric."
+    ] 
 
   get_feedback: (score, sequence) ->
     # starting feedback
